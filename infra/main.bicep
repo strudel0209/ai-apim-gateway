@@ -150,19 +150,19 @@ param openAiInstances object = {
           capacity: deploymentCapacity
         }
       }
-      {
-        name: 'dall-e-3'
-        location: 'eastus'
-        model: {
-          format: 'OpenAI'
-          name: 'dall-e-3'
-          version: '3.0'
-        }
-        sku: {
-          name: 'Standard'
-          capacity: 1
-        }
-      }
+      // {
+      //   name: 'dall-e-3'
+      //   location: 'eastus'
+      //   model: {
+      //     format: 'OpenAI'
+      //     name: 'dall-e-3'
+      //     version: '3.0'
+      //   }
+      //   sku: {
+      //     name: 'Standard'
+      //     capacity: 1
+      //   }
+      // }
     ]
   }
   openAi2: {
@@ -194,35 +194,35 @@ param openAiInstances object = {
       }
     ]
   }
-  openAi3: {
-    name: 'openai3'
-    location: 'eastus2'
-    deployments: [
-      {
-        name: chatGptDeploymentName
-        model: {
-          format: 'OpenAI'
-          name: chatGptModelName
-          version: chatGptModelVersion
-        }
-        scaleSettings: {
-          scaleType: 'Standard'
-        }
-      }
-      {
-        name: embeddingGptDeploymentName
-        model: {
-          format: 'OpenAI'
-          name: embeddingGptModelName
-          version: embeddingGptModelVersion
-        }
-        sku: {
-          name: 'Standard'
-          capacity: deploymentCapacity
-        }
-      }
-    ]
-  }
+  // openAi3: {
+  //   name: 'openai3'
+  //   location: 'eastus2'
+  //   deployments: [
+  //     {
+  //       name: chatGptDeploymentName
+  //       model: {
+  //         format: 'OpenAI'
+  //         name: chatGptModelName
+  //         version: chatGptModelVersion
+  //       }
+  //       scaleSettings: {
+  //         scaleType: 'Standard'
+  //       }
+  //     }
+  //     {
+  //       name: embeddingGptDeploymentName
+  //       model: {
+  //         format: 'OpenAI'
+  //         name: embeddingGptModelName
+  //         version: embeddingGptModelVersion
+  //       }
+  //       sku: {
+  //         name: 'Standard'
+  //         capacity: deploymentCapacity
+  //       }
+  //     }
+  //   ]
+  // }
 }
 
 param enableAzureAISearch bool = true
