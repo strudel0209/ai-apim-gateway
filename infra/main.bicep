@@ -231,14 +231,15 @@ param enableAzureAISearch bool = true
 param aiSearchInstances array = [
   {
     name: 'ai-search-swn'
-    url: 'https://REPLACE1.search.windows.net/'
+    //url: 'https://REPLACE1.search.windows.net/'
+    url: 'https://search-ued5lcgg5trfm.search.windows.net/'
     description: 'AI Search Instance 1'
   }
-  {
-    name: 'ai-search-sec'
-    url: 'https://REPLACE2.search.windows.net/'
-    description: 'AI Search Instance 2'
-  }
+  // {
+  //   name: 'ai-search-sec'
+  //   url: 'https://REPLACE2.search.windows.net/'
+  //   description: 'AI Search Instance 2'
+  // }
 ]
 
 @description('SKU name for OpenAI.')
